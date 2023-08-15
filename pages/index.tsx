@@ -12,13 +12,13 @@ export const getStaticProps: GetStaticProps = async () => {
     where: { published: true },
     include: {
       author: {
-        select: { name: true }
-      }
-    }
+        select: { name: true },
+      },
+    },
   });
   return {
     props: { feed },
-    revalidate: 10
+    revalidate: 10,
   };
 };
 

@@ -11,17 +11,21 @@ module.exports = {
         "eslint-config-prettier",
     ],
     "overrides": [
-        {
-            "env": {
-                "node": true
-            },
-            "files": [
-                ".eslintrc.{js,cjs}"
-            ],
-            "parserOptions": {
-                "sourceType": "script"
-            }
-        }
+      {
+        "env": {
+          "node": true
+        },
+        "files": [
+          ".eslintrc.{js,cjs}"
+        ],
+        "parserOptions": {
+          "sourceType": "script",
+          "project": null,
+        },
+        "rules": {
+          "@typescript-eslint/*": "off",
+        },
+      }
     ],
     "parserOptions": {
         "ecmaVersion": "latest",
