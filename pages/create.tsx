@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unknown-property */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
 import Layout from "components/Layout";
 import Router from "next/router";
@@ -17,6 +19,7 @@ function Draft() {
     });
     await Router.push("/drafts");
   } catch (error) {
+    // eslint-disable-next-line no-console
     console.error(error);
   }
  };

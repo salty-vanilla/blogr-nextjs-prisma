@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import React from "react";
 import { GetServerSideProps } from "next";
 import ReactMarkdown from "react-markdown";
@@ -64,7 +65,7 @@ function Post(props: PostProps) {
         )}
         {
           userHasValidSession && postBelongsToUser && (
-            <button type="button" onClick={() => deletePost(props.id)}>Delete</button>
+            <button type="button" onClick={() => deletePost(id)}>Delete</button>
           )
         }
       </div>

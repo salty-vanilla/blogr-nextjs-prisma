@@ -14,7 +14,6 @@ const options: NextAuthOptions = {
     ],
     adapter: PrismaAdapter(prisma),
     secret: process.env.SECRET,
-    debug: true,
 };
 
 const authHandler: NextApiHandler = (req, res) => NextAuth(req, res, options);

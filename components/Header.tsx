@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unknown-property */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 /** @jsxImportSource @emotion/react */
 import React from "react";
 import Link from "next/link";

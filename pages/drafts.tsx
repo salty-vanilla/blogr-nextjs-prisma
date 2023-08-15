@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import React from "react";
 import { GetServerSideProps } from "next";
 import { useSession, getSession } from "next-auth/react";
@@ -31,7 +32,6 @@ type Props = {
 
 function Drafts(props: Props) {
   const { data: session } = useSession();
-  console.log(props);
   const { drafts } = props;
 
   if (!session) {

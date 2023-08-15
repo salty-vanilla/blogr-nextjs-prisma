@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import { SessionProvider } from 'next-auth/react';
 import { AppProps } from "next/app";
 import { useEffect, useState } from 'react';
